@@ -1,29 +1,39 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const NavBar = () => {
   return (
     <header>
-      <nav className="bg-gray-800 text-white p-5">
-        <ul className="flex justify-center gap-6 font-medium">
+      <nav>
+        <ul className="bg-gray-800 text-white p-5 flex justify-center gap-6">
           <li>
-            <a href="/" className="hover:text-blue-500">
+            <Link className="text-xl font-semibold hover:text-blue-500" to="/">
               Home
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/about" className="hover:text-blue-500">
+            <Link
+              className="text-xl font-semibold hover:text-blue-500"
+              to="/about"
+            >
               About
-            </a>
+            </Link>
           </li>
           <li>
-            <a href="/services" className="hover:text-blue-500">
-              Services
-            </a>
+            <Link
+              className="text-xl font-semibold hover:text-blue-500"
+              to="/services"
+            >
+              services
+            </Link>
           </li>
           <li>
-            <a href="/contact" className="hover:text-blue-500">
+            <Link
+              className="text-xl font-semibold hover:text-blue-500"
+              to="/contact"
+            >
               Contact
-            </a>
+            </Link>
           </li>
         </ul>
       </nav>
